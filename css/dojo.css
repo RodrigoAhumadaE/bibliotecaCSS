@@ -1,0 +1,193 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    
+/* Clase fixed-width container que se "autocentrará" a sí misma */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body{
+  font-family: Roboto;
+}
+
+/* Estilo boton favorito */
+.btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.btn:hover {
+  background-color: #000082;
+}
+
+/* estilo navbar flexible */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  font-family: Roboto;
+  padding: 5px 1.5%;
+}
+
+.nav-title{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.link-nav{
+  font-size: 0.8em;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+/* estilos bloques flexibles */
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col, .col-2, .col-3{
+  background-color: gray;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+}
+
+.col{
+  flex: 1;
+}
+
+.col-2{
+  flex: 2;
+}
+
+.col-3{
+  flex: 3;
+}
+
+/* github blocks */
+
+.blocks{
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  border-top: black solid 2px;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+img{
+  width: 25%;
+}
+
+.titulo{
+  font-size: 2em;
+  margin: 2% 0;
+  color: #474771;
+}
+
+.celeste{
+  background-color: lightblue;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.verde{
+  background-color: lightgreen;
+  width: 91%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3%;
+  margin: 2% 0;
+}
+
+.blanco{
+  background-color: white;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+footer{
+  padding: 3% 0;  
+}
+
+/* tarjeta de presentación */
+
+.tarjeta {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: flex-start;
+  border: #D0D0D0 solid 2px;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: #17A2B8;
+  position: relative;
+}
+
+.user-img{
+  position: absolute;
+  width: 80px;
+  top: 55px;
+  left: 20px;
+  border-radius: 50%;
+  border: #fff solid 2px;
+  outline: #D0D0D0 solid 2px;
+}
+
+.info{
+  padding: 40px 20px 20px;
+}
+
+.icon{
+  width: 10px;
+  margin: 0 5px;
+}
+
+.ubicacion, .link{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.edit{
+  font-size: 0.8em;
+}
